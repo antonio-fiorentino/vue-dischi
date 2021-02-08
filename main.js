@@ -5,7 +5,12 @@
 var app = new Vue({
  el: '#root',
  data:{
-   cdElements:[]
+   cdElements:[],
+   selected:''
+ },
+
+ methods:{
+
  },
 
  mounted(){
@@ -16,6 +21,7 @@ var app = new Vue({
      const disks = element.data.response
      self.cdElements = disks;
    })
+
  }
 
 });
