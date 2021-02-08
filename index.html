@@ -30,7 +30,7 @@
         <div id="root" class="cds-container container">
             <!-- Disco ad esempio -->
 
-            <div class="cd" v-for="item in cdElements">
+            <div class="cd" v-for="item in cdElements" v-if="item.genre === selected">
               <img :src="item.poster">
               <h3>{{item.title}}</h3>
               <span class="author">{{item.author}}</span>
